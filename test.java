@@ -1,27 +1,20 @@
 import java.util.Scanner;
 public class test {
     public static void main(String[] args) {
-        Scanner input= new Scanner(System.in);
-          int fiyat;
-          float kdvli;
-          float kdv;
-          System.out.print("lutfen urunun fiyatini girin: ");
-          fiyat= input.nextInt();
-          if(fiyat<0)
-          {
-              System.out.print("lutfen 0 dan buyuk girin");
-          }
-          if(fiyat>=0 && fiyat<=1000)
-          {
-              kdv=fiyat*18/100;
-              kdvli=kdv+fiyat;
-              System.out.print("kdv'li fiyat=" + kdvli);
-          }
-          if(fiyat>1000)
-          {
-              kdv=fiyat*8/100;
-              kdvli=kdv+fiyat;
-              System.out.print("kdv'li fiyat=" + kdvli);
-          }
+     Scanner input=new Scanner(System.in);
+     int kenar1;
+     int kenar2;
+     int kenar3;
+     System.out.print("kenar1 gir: ");
+      kenar1= input.nextInt();
+        System.out.print("kenar2 gir: ");
+        kenar2= input.nextInt();
+        System.out.print("kenar 3 gir: ");
+        kenar3=input.nextInt();
+       int u;
+       u=(kenar1+kenar2+kenar3)/2;
+       double alan;
+       alan=Math.sqrt(u*(u-kenar1)*(u-kenar2)*(u-kenar3));
+        System.out.print(alan);
     }
 }

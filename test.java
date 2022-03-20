@@ -2,19 +2,24 @@ import java.util.Scanner;
 public class test {
     public static void main(String[] args) {
      Scanner input=new Scanner(System.in);
-     int kenar1;
-     int kenar2;
-     int kenar3;
-     System.out.print("kenar1 gir: ");
-      kenar1= input.nextInt();
-        System.out.print("kenar2 gir: ");
-        kenar2= input.nextInt();
-        System.out.print("kenar 3 gir: ");
-        kenar3=input.nextInt();
-       int u;
-       u=(kenar1+kenar2+kenar3)/2;
-       double alan;
-       alan=Math.sqrt(u*(u-kenar1)*(u-kenar2)*(u-kenar3));
-        System.out.print(alan);
+     int domates;
+     int patlican;
+     int muz;
+     int armut;
+     int elma;
+     System.out.print("domates gir: ");
+      domates= input.nextInt();
+        System.out.print("armut gir: ");
+        armut= input.nextInt();
+        System.out.print("muz gir: ");
+        muz=input.nextInt();
+        System.out.print("elma gir: ");
+        elma=input.nextInt();
+        System.out.print("patlican gir: ");
+        patlican=input.nextInt();
+
+       double tutar;
+       tutar=2.14*armut+3.67*elma+1.11*domates+0.95*muz+5*patlican;
+        System.out.print(tutar);
     }
 }
